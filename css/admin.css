@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    background-color: darkblue;
+    box-shadow: 5px 5px 5px lightgray;
+    position: fixed;
+    & h2{
+        text-align: center;
+        color: #fff
+    }
+    & .side-menu{
+        margin: 2rem ;
+        list-style: none;
+        & .side-list{
+            margin: 3rem 0;
+            & .side-link{
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+            & .side-link:hover{
+                color: gray;
+            }
+        }
+    }
+}
+.navbar{
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+    & .navbar-nav{
+        list-style: none;
+        & .nav-item{
+            & .nav-link{
+                text-decoration: none;
+                color: gray;
+                font-size: 18px;
+            }
+            & .nav-link:hover{
+                color: red;
+            }
+        }
+    }
+}
+.main-content{
+    margin-left: 250px;
+    width: 100%;
+}
+.content{
+    margin: 20px;
+}
+table{
+    width: 100%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 1px lightgray;
+    & thead{
+        background-color: blue;
+        color: white;
+        
+        & tr{
+           
+            & th {
+                padding: 1rem;
+                font-size: large;
+            }
+        }
+    }
+    & tbody{
+        background-color: #ffff;
+        
+        & tr{
+            & td{
+                padding: 1.5rem;
+                font-size: large;
+                text-align: center;
+            }
+        }
+    }
+    
+}
+
+.btn-edit {
+    padding: .5rem 2rem;
+    border: 1px solid #ff9101;
+    color: #ff9101;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px lightgray;
+}
+
+.btn-delete {
+    padding: .5rem 2rem;
+    border: 1px solid red;
+    color: red;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px lightgray;
+}
+.btn-edit:hover {
+    background-color: #ff9101;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: red;
+    color: white;
+}
+
+
+.btn-add{
+    padding: .5rem 2rem;
+    border: 1px solid blue;
+    color: blue;
+    margin: 2rem;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px lightgray;
+}
+.btn-add:hover{
+    background-color: blue;
+    color: white;
+}
+/* Profile */
+.content-profile{
+    width: 100%;
+    height: 100%;
+    & .logo{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: xx-large;
+        color: white;
+        background-color: rgb(96, 96, 96);
+        border-radius: 80px;
+        display: block;
+        margin: 1rem auto;
+    }
+    & form{
+        width: 600px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        & .form-group{
+            margin-bottom: 1rem;
+            & label{
+                width: 500px;
+                text-align: start;
+                display: block;
+                margin:0 auto;
+                padding: 0 1rem  .25rem 1rem;
+            }
+            & input{
+                padding: 1rem 0;
+                width: 500px;
+                border: 1px solid lightgray;
+                border-radius: 2rem;
+                padding-inline-start: 1rem;
+            }
+
+        }
+       & .my-3{
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        & .btn-submit{
+            padding: 1rem;
+            width: 500px;
+            color: white;
+            background-color: rgb(53, 53, 53);
+            border-radius: 80px;
+            border: none;
+        }
+        & .btn-submit:hover{
+            background-color: rgba(53, 53, 53, 0.558);
+            cursor: pointer;
+        }
+       }
+    }
+}
+.alert-error{
+    width: 90%;
+    padding: 1rem;
+    border:1px solid red;
+    border-radius: 8px;
+    margin: 1rem auto;
+    background-color: lightcoral;
+    color: darkred;
+}
+.alert-success{
+    width: 90%;
+    padding: 1rem;
+    border:1px solid lime;
+    border-radius: 8px;
+    margin: 1rem auto;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.content-candidate{
+    form{
+        display: block;
+        margin: 0 auto;
+       
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 1px 1px 1px lightgray;
+        border-radius: 10px;
+        & .col-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem; 
+            padding-top: 1rem;
+            & .form-group{
+                margin: 5px 0;
+                & label{
+                    display: block;
+                    text-align: start;
+                    margin: 10px 0 10px 50px;
+                }
+                & input{
+                    width: 80%;
+                    margin: 0 10px;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    border: 1px solid lightgray;
+                }
+            }
+        }
+        & .my-3{
+            & .btn-submit{
+                padding: .5rem 1rem;
+                margin: 2rem 0;
+                width: 60%;
+                background-color: white;
+                border: 1px solid green;
+                color: green;
+                border-radius: 10px;
+                font-size: large;
+            }
+            & .btn-submit:hover{
+                background-color: green;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        
+    
+        
+    }
+}
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    & .card{
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px gray;
+        text-align: center;
+        & h2{
+            font-size: large;
+        }
+        & p{
+            margin: 10px;
+        }
+    }
+}

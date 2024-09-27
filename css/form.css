@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    height: 100%;
+    /* width: 1140px; */
+    display: block;
+    margin: 0 auto;
+}
+.logo-box{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+.alert-error{
+    width: 100%;
+    padding: 1rem;
+    border:1px solid red;
+    border-radius: 8px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background-color: lightcoral;
+    color: darkred;
+}
+.alert-success{
+    width: 100%;
+    padding: 1rem;
+    border:1px solid lime;
+    border-radius: 8px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+h2{
+    margin: 2rem 0;
+    padding: 2rem 0;
+    background-color: limegreen;
+    border-radius: 50px;
+    color: white;
+}
+form{
+    padding: 1.5rem 0;
+    text-align: center;
+    /* border: 1px solid purple; */
+    margin: 0 auto;
+    
+    width: 500px;
+    .form-regis{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        & .form-group{
+        
+            margin-bottom: 1rem;
+            & label{
+                display: block;
+                text-align: start;
+                margin-left: 2.25rem;
+                padding-bottom: .5rem;
+            }
+            & input{
+                padding: 0.5rem;
+                border: 1px solid lightgray;
+                border-radius: 4px;
+            }
+        }
+    }
+    .form-login{
+        display: block;
+        & .form-group{
+            
+            margin-bottom: 2rem;
+            & label{
+                display: block;
+                text-align: start;
+                padding-bottom: .5rem;
+            }
+            & input{
+                padding: 0.5rem;
+                border: 1px solid lightgray;
+                border-radius: 4px;
+                width: 500px;
+
+            }
+        }
+    }
+    & .my-3{
+        margin: 1rem 0;
+        & button{
+            width: 200px;
+            padding: 0.5rem;
+            background-color: rgb(43, 40, 40);
+            color: #f3f3f3;
+            font-size: large;
+            border-radius: 5px;
+            border: 1px solid rgb(43, 40, 40);
+        }
+        & button:hover{
+            background-color: rgba(43, 40, 40, 0.575);
+            cursor: pointer;
+        }
+    }
+    
+}
